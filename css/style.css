@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #9b59b6;
+}
+
+.container{
+    width: 360px;
+    height: 720px;
+    margin: 5% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+h2, h3{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.container form{
+    width: 280px;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    transition: 0.5s;
+}
+
+form input, form select{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+}
+
+form label, form input.filled_data, .standart label, .standart input, .premium label, .premium input{
+    display: inline;
+    width: auto;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+::placeholder{
+    color: #777;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#standart, #premium{
+    margin-top: 5px;
+}
+
+#standartBox{
+    margin-bottom: 5px;
+}
+
+#form2, #form3{
+    left: 450px;
+}
+
+#congrats{
+    padding: 20px;
+    display: none;
+    color: #333;
+}
+
+#congrats p{
+    text-align: center;
+    color: #333;
+}
+
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+
+.step-col{
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    font-weight: bold;
+}
+
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    transition: 1s;
+}
+
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #ffad06;
+}
+
+.success{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    z-index: 2;
+}
+
+form .error{
+    border: 2px solid #e74c3c;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.mir{
+    background: url(../img/mir.png);
+    background-repeat: no-repeat;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;
+    right: 5px;
+    background-size: auto 70%;
+    background-position: 95% 50%;
+}
+
+.american{
+    background: url(../img/american.png);
+    background-repeat: no-repeat;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;
+    right: 5px;
+    background-size: auto 70%;
+    background-position: 95% 50%;
+}
+
+.visa{
+    background: url(../img/visa.png);
+    background-repeat: no-repeat;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;
+    right: 5px;
+    background-size: auto 70%;
+    background-position: 95% 50%;
+}
+
+.master{
+    background: url(../img/master.png);
+    background-repeat: no-repeat;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;
+    right: 5px;
+    background-size: auto 70%;
+    background-position: 95% 50%;
+}
+
+.maestro{
+    background: url(../img/maestro.png);
+    background-repeat: no-repeat;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;
+    right: 5px;
+    background-size: auto 70%;
+    background-position: 95% 50%;
+}
